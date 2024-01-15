@@ -1,1 +1,65 @@
-/* write your carousel css in this file */
+body{
+    background-color: #242424da;
+}
+.carousel{
+    height: 90vh;
+    /* background-color: #242424; */
+}
+
+.carousel,.carousel-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-inner{
+    height: 700px;
+    width: 600px;
+}
+
+.carousel-item {
+    display: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item img{
+    height: 100%;
+    width: 100%;
+}
+
+.active {
+    display: block;
+}
+
+.left-arrow,.right-arrow{
+    color: white;
+}
+
+.arrowHolder{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.absoluteText{
+    padding: 10px;
+    font-size: 60px;
+    background-color: rgba(255, 255, 255, 0.59);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid black;/* Center the text horizontally */
+    text-align: center;
+}
+.top{
+    top: 5%;
+}
+.bottom{
+    bottom: 5%;
+    font-size: 30px;
+}
